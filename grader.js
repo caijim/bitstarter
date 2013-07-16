@@ -1,4 +1,4 @@
-#!/usr/bin/env node
+1;2c#!/usr/bin/env node
 /*
 Automatically grade files for the presence of specified HTML tags/attributes.
 Uses commander.js and cheerio. Teaches command line application development
@@ -93,7 +93,6 @@ if(require.main == module) {
     if (program.file)
     {
 	var checkJson = checkHtmlFile(fs.readFileSync(program.file), program.checks);
-	outJson = JSON.stringify(checkJson, null, 4);
     }
     else if (program.url)
     {
